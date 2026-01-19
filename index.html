@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng Kareem Eltabkh - Professional Engineer & Full-Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+</head>
+<body>
+    <!-- الجسيمات المتحركة -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- زر لوحة التحكم -->
+    <button class="control-btn" id="controlBtn">
+        <i class="fas fa-cog"></i>
+    </button>
+    
+    <!-- زر العودة للأعلى -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- المحتوى الرئيسي -->
+    <div class="container">
+        <!-- الرأس -->
+        <header class="header">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/615895618_1827265654646692_5226007579235318607_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=B4YBVQ6AhUMQ7kNvwHZPO3W&_nc_oc=AdnN4cUoZtlwyRJMDuHYaRng3S8dVcjUov6VWxxEsWrA39Qv_DLnsQ1SJFMPCTUVkh0&_nc_zt=23&_nc_ht=scontent.fcai19-1.fna&_nc_gid=s2Y93perkCZO819JNKtGLA&oh=00_AfoVGWlTC4zsFbJCfSIaFDT2h_jVk0MzF020TaNAGGR4Qw&oe=69712BFF" 
+                         alt="Eng Kareem Eltabkh"
+                         onerror="this.src='https://ui-avatars.com/api/?name=Kareem+Eltabkh&background=1877f2&color=fff&size=400&bold=true'">
+                    <div class="verified-badge">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <div class="profile-info">
+                    <h1 class="name">Eng Kareem Eltabkh</h1>
+                    <div class="title-container">
+                        <h2 class="title">Professional Engineer & Full-Stack Developer</h2>
+                        <div class="tags">
+                            <span class="tag verified">
+                                <i class="fas fa-check-circle"></i> Verified
+                            </span>
+                            <span class="tag experience">
+                                <i class="fas fa-star"></i> 8+ Years
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-badges">
+                        <a href="https://wa.me/+201025844231" class="contact-badge whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="mailto:ebnahmed233@gmail.com" class="contact-badge email" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://www.facebook.com/karem.Eltabkh" class="contact-badge facebook" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- شريط التقدم للغات -->
+        <div class="languages-bar">
+            <div class="language-track">
+                <div class="language-item">
+                    <span class="lang-name">English</span>
+                    <div class="lang-progress">
+                        <div class="lang-fill" data-level="98"></div>
+                    </div>
+                    <span class="lang-percent">98%</span>
+                </div>
+                <div class="language-item">
+                    <span class="lang-name">Arabic</span>
+                    <div class="lang-progress">
+                        <div class="lang-fill" data-level="100"></div>
+                    </div>
+                    <span class="lang-percent">100%</span>
+                </div>
+                <div class="language-item">
+                    <span class="lang-name">German</span>
+                    <div class="lang-progress">
+                        <div class="lang-fill" data-level="70"></div>
+                    </div>
+                    <span class="lang-percent">70%</span>
+                </div>
+                <div class="language-item">
+                    <span class="lang-name">French</span>
+                    <div class="lang-progress">
+                        <div class="lang-fill" data-level="60"></div>
+                    </div>
+                    <span class="lang-percent">60%</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- التنقل الرئيسي -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <button class="nav-item active" data-target="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </button>
+                <button class="nav-item" data-target="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </button>
+                <button class="nav-item" data-target="skills">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </button>
+                <button class="nav-item" data-target="projects">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projects</span>
+                </button>
+                <button class="nav-item" data-target="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- المحتوى -->
+        <main class="main-content">
+            <!-- القسم الرئيسي -->
+            <section id="home" class="content-section active">
+                <div class="welcome-card">
+                    <h2 class="section-title">Welcome to My Digital Space</h2>
+                    <p class="section-subtitle">Crafting Digital Excellence with Precision & Innovation</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number" data-count="50">0</h3>
+                                <p class="stat-label">Projects Delivered</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number" data-count="35">0</h3>
+                                <p class="stat-label">Happy Clients</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number" data-count="8">0</h3>
+                                <p class="stat-label">Years Experience</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number" data-count="20">0</h3>
+                                <p class="stat-label">Technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="intro-text">
+                        <p>I specialize in building high-performance web applications and digital solutions that drive business growth. With a strong foundation in both engineering principles and creative development, I transform ideas into impactful digital experiences.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- قسم من أنا -->
+            <section id="about" class="content-section">
+                <div class="about-card">
+                    <h2 class="section-title">About Me</h2>
+                    
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>Hello! I'm <strong>Kareem Eltabkh</strong>, a passionate engineer and full-stack developer with over 8 years of experience in the tech industry. My journey combines technical expertise with creative problem-solving.</p>
+                            
+                            <div class="education-section">
+                                <h3><i class="fas fa-graduation-cap"></i> Education & Certifications</h3>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Bachelor's in Computer Engineering</li>
+                                    <li><i class="fas fa-check"></i> AWS Certified Solutions Architect</li>
+                                    <li><i class="fas fa-check"></i> Microsoft Certified: Azure Developer</li>
+                                    <li><i class="fas fa-check"></i> Google Cloud Professional</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="core-values">
+                                <h3><i class="fas fa-heart"></i> Core Values</h3>
+                                <div class="values-grid">
+                                    <div class="value-item">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <h4>Innovation</h4>
+                                        <p>Always exploring new technologies</p>
+                                    </div>
+                                    <div class="value-item">
+                                        <i class="fas fa-handshake"></i>
+                                        <h4>Integrity</h4>
+                                        <p>Honest and transparent communication</p>
+                                    </div>
+                                    <div class="value-item">
+                                        <i class="fas fa-bullseye"></i>
+                                        <h4>Excellence</h4>
+                                        <p>Striving for perfection in every project</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- قسم المهارات -->
+            <section id="skills" class="content-section">
+                <div class="skills-card">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    
+                    <div class="skills-categories">
+                        <!-- لغات البرمجة -->
+                        <div class="category-card">
+                            <div class="category-header">
+                                <i class="fas fa-code"></i>
+                                <h3>Programming Languages</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">JavaScript/TypeScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="95"></div>
+                                    </div>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Python</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="92"></div>
+                                    </div>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Java</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="85"></div>
+                                    </div>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">C++</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="80"></div>
+                                    </div>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">PHP</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="88"></div>
+                                    </div>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- فرونت إند -->
+                        <div class="category-card">
+                            <div class="category-header">
+                                <i class="fas fa-paint-brush"></i>
+                                <h3>Frontend Development</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">React.js</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="95"></div>
+                                    </div>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Vue.js</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="90"></div>
+                                    </div>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">HTML5/CSS3</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="98"></div>
+                                    </div>
+                                    <span class="skill-percent">98%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Sass/SCSS</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="90"></div>
+                                    </div>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- باك إند -->
+                        <div class="category-card">
+                            <div class="category-header">
+                                <i class="fas fa-server"></i>
+                                <h3>Backend Development</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Node.js</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="95"></div>
+                                    </div>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Python/Django</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="92"></div>
+                                    </div>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">PHP/Laravel</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="88"></div>
+                                    </div>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Java/Spring</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="82"></div>
+                                    </div>
+                                    <span class="skill-percent">82%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- قواعد البيانات -->
+                        <div class="category-card">
+                            <div class="category-header">
+                                <i class="fas fa-database"></i>
+                                <h3>Database & Cloud</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">MongoDB</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="90"></div>
+                                    </div>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="88"></div>
+                                    </div>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">AWS</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="90"></div>
+                                    </div>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Docker</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-level="85"></div>
+                                    </div>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- قسم المشاريع -->
+            <section id="projects" class="content-section">
+                <div class="projects-card">
+                    <h2 class="section-title">Featured Projects</h2>
+                    
+                    <div class="projects-grid">
+                        <!-- مشروع 1 -->
+                        <div class="project-item">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="tech-tags">
+                                        <span>React</span>
+                                        <span>Node.js</span>
+                                        <span>MongoDB</span>
+                                    </div>
+                                </div>
+                                <div class="project-number">01</div>
+                            </div>
+                            <div class="project-content">
+                                <h3>E-Commerce Platform</h3>
+                                <p>Full-featured online shopping platform with payment integration and admin dashboard.</p>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- مشروع 2 -->
+                        <div class="project-item">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="tech-tags">
+                                        <span>React Native</span>
+                                        <span>Firebase</span>
+                                        <span>Node.js</span>
+                                    </div>
+                                </div>
+                                <div class="project-number">02</div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Health & Fitness App</h3>
+                                <p>Mobile application for health tracking with AI-powered recommendations.</p>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-app-store"></i> App Store
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-google-play"></i> Play Store
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- مشروع 3 -->
+                        <div class="project-item">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="tech-tags">
+                                        <span>Vue.js</span>
+                                        <span>Python</span>
+                                        <span>PostgreSQL</span>
+                                    </div>
+                                </div>
+                                <div class="project-number">03</div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Business Analytics Dashboard</h3>
+                                <p>Interactive dashboard for business intelligence with real-time data visualization.</p>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- قسم الاتصال -->
+            <section id="contact" class="content-section">
+                <div class="contact-card">
+                    <h2 class="section-title">Get In Touch</h2>
+                    
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>WhatsApp</h4>
+                                    <a href="https://wa.me/+201025844231" target="_blank">+20 102 584 4231</a>
+                                    <p>Fast response, available 24/7</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:ebnahmed233@gmail.com" target="_blank">ebnahmed233@gmail.com</a>
+                                    <p>Response within 24 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Facebook</h4>
+                                    <a href="https://www.facebook.com/karem.Eltabkh" target="_blank">karem.Eltabkh</a>
+                                    <p>Connect and follow updates</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- الفوتر -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Eng Kareem Eltabkh</h3>
+                    <p>Building the Future, One Line of Code at a Time</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://wa.me/+201025844231" class="social-icon" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:ebnahmed233@gmail.com" class="social-icon" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.facebook.com/karem.Eltabkh" class="social-icon" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Eng Kareem Eltabkh. All Rights Reserved.</p>
+                    <p class="visit-count">Visitors: <span id="visitorCount">0</span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- لوحة التحكم المنبثقة -->
+    <div class="control-panel" id="controlPanel">
+        <div class="panel-header">
+            <h3><i class="fas fa-sliders-h"></i> Control Panel</h3>
+            <button class="close-panel" id="closePanel">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="panel-content">
+            <div class="panel-section">
+                <h4><i class="fas fa-language"></i> Language</h4>
+                <div class="language-options">
+                    <button class="lang-option active" data-lang="en">English</button>
+                    <button class="lang-option" data-lang="ar">العربية</button>
+                </div>
+            </div>
+            
+            <div class="panel-section">
+                <h4><i class="fas fa-adjust"></i> Theme</h4>
+                <div class="theme-options">
+                    <button class="theme-option active" data-theme="dark">
+                        <i class="fas fa-moon"></i> Dark
+                    </button>
+                    <button class="theme-option" data-theme="light">
+                        <i class="fas fa-sun"></i> Light
+                    </button>
+                </div>
+            </div>
+            
+            <div class="panel-section">
+                <h4><i class="fas fa-chart-line"></i> Statistics</h4>
+                <div class="stats-display">
+                    <div class="stat-display">
+                        <i class="fas fa-eye"></i>
+                        <div class="stat-info">
+                            <span class="stat-value" id="panelVisits">0</span>
+                            <span class="stat-label">Visits</span>
+                        </div>
+                    </div>
+                    <div class="stat-display">
+                        <i class="fas fa-clock"></i>
+                        <div class="stat-info">
+                            <span class="stat-value" id="currentTime">00:00</span>
+                            <span class="stat-label">Time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ملفات JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
